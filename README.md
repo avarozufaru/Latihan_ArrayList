@@ -216,7 +216,7 @@ Alur pembuatan objek di awal `main`:
 
 ```mermaid
 flowchart LR
-    A["new Bank()"] --> B["bank.addCustomer(&quot;Jauda Avaro&quot;, &quot;Zufaru&quot;)<br/>mengisi customers[0]"]
+    A["new Bank()"] --> B["bank.addCustomer('Jauda Avaro', 'Zufaru')<br/>mengisi customers[0]"]
     B --> C["bank.getCustomer(0)<br/>= nasabahAktif"]
     C --> D["nasabahAktif.addAccount(new Account(1000000.0))<br/>accounts.add(...)"]
     D --> E["nasabahAktif.getAccount(0)<br/>= rekeningAktif"]
